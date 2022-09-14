@@ -1,0 +1,24 @@
+#num-pad {
+  width: 75%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: calc((335px) / 2.5);
+
+  .number {
+    width: calc((350px - 14px) / 4);
+    height: calc((335px - 14px) / 5);
+    background-color: $number-color;
+    border: 0.5px solid black;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #zero {
+    width: calc((350px - 14px) / 2);
+  }
+  .number:hover {
+    opacity: 0.8;
+  }
+}

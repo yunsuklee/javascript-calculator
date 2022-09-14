@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+#calculator {
+  width: 350px;
+  height: 400px;
+  background-color: black;
+  border: 2px solid #4D4D4D;
+  padding: 5px;
+  position: absolute;
+}
+#calculator #screen {
+  width: 100%;
+  height: 65px;
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 2rem;
+}
+#calculator #screen #operation, #calculator #screen #display {
+  width: 100%;
+  height: 32.5px;
+}
+#calculator #screen #operation {
+  color: yellow;
+  font-size: 1rem;
+  line-height: 25px;
+  vertical-align: middle;
+}
+#calculator #buttons {
+  width: 100%;
+  height: 321px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#num-pad {
+  width: 75%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 134px;
+}
+#num-pad .number {
+  width: 84px;
+  height: 64.2px;
+  background-color: #4D4D4D;
+  border: 0.5px solid black;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+#num-pad #zero {
+  width: 168px;
+}
+#num-pad .number:hover {
+  opacity: 0.8;
+}
+
+#sym-pad-1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+#sym-pad-2 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.symbol {
+  width: 84px;
+  height: 64.2px;
+  background-color: #666666;
+  border: 0.5px solid black;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.symbol:hover {
+  opacity: 0.8;
+}
+
+#clear {
+  width: 168px;
+  background-color: #AC3939;
+}
+
+#equals {
+  height: 128.4px;
+  background-color: #114466;
+}
+
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff") format("woff"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7") format("svg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  font-family: "Digital", sans-serif;
+}
+
+#root {
+  background-color: #C2C2D6;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+#calculator {
+  width: 350px;
+  height: 400px;
+  background-color: $calculator-color;
+  border: 2px solid $number-color;
+  padding: 5px;
+  position: absolute;
+
+  #screen {
+    width: 100%;
+    height: 65px;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 2rem;
+
+    #operation, #display {
+      width: 100%;
+      height: calc(65px / 2);
+    }
+
+    #operation {
+      color: $operating-color;
+      font-size: 1rem;
+      line-height: 25px;
+      vertical-align: middle;
+    }
+  }
+
+  #buttons {
+    width: 100%;
+    height: 321px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
